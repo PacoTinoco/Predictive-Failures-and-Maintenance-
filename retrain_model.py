@@ -8,6 +8,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import psycopg2
 
+from dotenv import load_dotenv
+load_dotenv()
+
 MODEL_PATH = os.getenv("MODEL_PATH", "model.pkl")
 
 DB_HOST = os.getenv("DB_HOST")
